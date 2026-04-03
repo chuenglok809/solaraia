@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400&amp;family=Manrope:wght@200;300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-fixed-dim": "#cac6bd",
+              "secondary-container": "#fc8d66",
+              "primary-fixed-dim": "#b3c8eb",
+              "primary": "#021a35",
+              "on-secondary-container": "#732506",
+              "on-secondary-fixed-variant": "#7d2c0d",
+              "primary-container": "#1a2f4b",
+              "on-tertiary-fixed-variant": "#494740",
+              "tertiary-fixed": "#e7e2d8",
+              "surface-tint": "#4b5f7e",
+              "surface-dim": "#dedad0",
+              "on-primary": "#ffffff",
+              "outline-variant": "#c4c6ce",
+              "on-surface-variant": "#44474d",
+              "on-error": "#ffffff",
+              "error-container": "#ffdad6",
+              "on-primary-fixed": "#041c37",
+              "tertiary": "#1b1a14",
+              "outline": "#74777e",
+              "on-tertiary-fixed": "#1d1c16",
+              "on-primary-fixed-variant": "#334865",
+              "surface-variant": "#e7e2d8",
+              "surface-container-lowest": "#ffffff",
+              "secondary-fixed": "#ffdbd0",
+              "surface-container": "#f2ede3",
+              "surface-bright": "#fef9ef",
+              "on-error-container": "#93000a",
+              "tertiary-container": "#302e28",
+              "surface-container-highest": "#e7e2d8",
+              "secondary-fixed-dim": "#ffb59d",
+              "on-background": "#1d1c16",
+              "on-primary-container": "#8397b8",
+              "inverse-primary": "#b3c8eb",
+              "inverse-on-surface": "#f5f0e6",
+              "surface": "#fef9ef",
+              "primary-fixed": "#d4e3ff",
+              "on-tertiary": "#ffffff",
+              "inverse-surface": "#32302a",
+              "secondary": "#9c4323",
+              "on-tertiary-container": "#99958d",
+              "background": "#fef9ef",
+              "on-secondary-fixed": "#390c00",
+              "on-secondary": "#ffffff",
+              "surface-container-low": "#f8f3e9",
+              "surface-container-high": "#ede8de",
+              "on-surface": "#1d1c16",
+              "error": "#ba1a1a"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .tonal-shift-surface {
+            background: linear-gradient(to bottom, rgba(255,255,255,0.8), rgba(255,255,255,0));
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .text-shadow-sm {
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-secondary/30">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 dark:bg-slate-900/70 backdrop-blur-xl shadow-sm shadow-[#1A2F4B]/5">
+<div class="flex justify-between items-center px-8 py-6 max-w-screen-2xl mx-auto">
+<div class="flex items-center gap-4">
+<img alt="Solaraia Logo" class="h-10 w-auto" data-alt="Hand-drawn artistic sun logo with fine lines and organic circular shape in deep navy blue" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvdChR6R_cgkwB2HYEgYLs29C6Wntjc7s2tX4FZz7iuF-4eRSepCXL8pqaVv4g7qfX4CwPm4U31rVLUYQD8iI682FZETIr47o1kRkbnh-NnAPPPDI5-X2zR2U8t6HHMc6xZzgsmlh-ehfDLSFyMmwPDRaL6xRSHSSJ4jcvkZilgHkm5nvs-sFESV6dgSAAM7nAglryXXQQqBex3WIyz4z2bJfJ3MWVKJxd5ehwcHI4US_wY8U_YdXsuofc74CtmtETRIQwbq9Tyc8"/>
+<span class="text-2xl font-serif italic text-[#1A2F4B] dark:text-orange-400">Solaraia</span>
+</div>
+<div class="hidden md:flex items-center gap-10 font-['Noto_Serif'] font-light tracking-wide">
+<a class="text-[#9c4323] dark:text-orange-400 font-medium border-b border-[#9c4323] pb-1" href="#">Collections</a>
+<a class="text-[#1A2F4B] dark:text-slate-300 hover:text-[#9c4323] transition-colors transition-all duration-300" href="#">Our Craft</a>
+<a class="text-[#1A2F4B] dark:text-slate-300 hover:text-[#9c4323] transition-colors transition-all duration-300" href="#">Sustainability</a>
+<a class="text-[#1A2F4B] dark:text-slate-300 hover:text-[#9c4323] transition-colors transition-all duration-300" href="#">Journal</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="text-[#1A2F4B] hover:opacity-80 transition-all duration-300">
+<span class="material-symbols-outlined text-2xl">search</span>
+</button>
+<button class="text-[#1A2F4B] hover:opacity-80 transition-all duration-300 relative">
+<span class="material-symbols-outlined text-2xl">shopping_bag</span>
+<span class="absolute -top-1 -right-1 bg-secondary text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">0</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Hero Section: Cinematic Video Background -->
+<header class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+<!-- Background Asset Simulation -->
+<div class="absolute inset-0 bg-primary">
+<img class="w-full h-full object-cover opacity-80" data-alt="Cinematic wide shot of a Mediterranean luxury patio with white organic shade sails gently moving in the breeze at sunset, warm golden light filtering through" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4IgcUPPWZNd05ieHwcc21Lpto6qJ_GenCPhROjTk3lfaugF7nWMFLGcNK28_F5xolHh8xiULXAiWm1ZMnA_X6lHN7ZIvPfo_BNxiD_ZSE2qWgfSXoi0Q083qYtt5Q-h0zbBxNhOuadGS5LNVwr5trnB1Etgw9RKAIfdK6y9C3cxx-Wl0t44sUx1aFYdeGVxezOOWqtCzSpvPNft9RIVZcnF7ySOaA2lOaiO5cEg6kgqwjFXi1erunf7JK40wLflpZxpaz1r9IT7Q"/>
+<div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-surface/40"></div>
+</div>
+<div class="relative z-10 text-center px-6 max-w-5xl">
+<span class="font-label text-sm tracking-[0.3em] uppercase text-white/90 mb-6 block">Horizonte Editorial</span>
+<h1 class="font-headline text-5xl md:text-8xl text-white font-light leading-tight tracking-tight text-shadow-sm">
+                Sol, sombra e <br/>
+<span class="italic font-normal">bem-estar</span> no seu espaço
+            </h1>
+<div class="mt-12 flex flex-col md:flex-row gap-6 justify-center">
+<button class="bg-gradient-to-br from-secondary to-[#7d2c0d] text-on-primary px-10 py-4 rounded-md font-medium tracking-wide transition-transform active:scale-95 shadow-xl shadow-secondary/20">
+                    Explorar Coleções
+                </button>
+<button class="glass-card text-white px-10 py-4 rounded-md font-medium tracking-wide transition-all hover:bg-white/20">
+                    Nossa Filosofia
+                </button>
+</div>
+</div>
+<!-- Scroll Indicator -->
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-60">
+<span class="text-white text-[10px] tracking-widest uppercase font-label">Descobrir</span>
+<div class="w-px h-12 bg-white/40"></div>
+</div>
+</header>
+<!-- Section: Editorial Introduction -->
+<section class="py-32 px-8 bg-surface">
+<div class="max-w-screen-xl mx-auto grid md:grid-cols-2 gap-20 items-center">
+<div class="relative">
+<div class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="Close-up of high-quality architectural fabric texture showing intricate weave pattern in beige and sand tones under bright natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApJBT8iH5I8-vhty6Z23Ec1DWkc33MPaj_etrC6NHHVtXD-KtK-lmeDMJw6gDLp5xvDTG2kdrxrjHg3slAXsBgPGFMLmjEY9-d420MjZT47uAYk2VdI6EVJt1jcn-b5uWxxVrB-VyI496OBuSmqp_8mP5OW1p3I0ikjNMHmgwsuP7310BZoWTM1jG12Wh1Gd1rKsDj5txNFlR84H4t0kRGHfM6jwftddC3Y2fkfMDXOfr5Zn5HlIs5aMm_vZiZMuqWWz0Z0F1kW4c"/>
+</div>
+<div class="absolute -bottom-10 -right-10 w-2/3 aspect-square rounded-xl overflow-hidden shadow-2xl hidden md:block border-8 border-surface">
+<img class="w-full h-full object-cover" data-alt="Architectural detail of a minimalist concrete structure with sharp shadows cast by a triangular shade sail above" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCm3Izpc8SDtjqhTl9mTeSJbSagclTKYxwM9602MtdDobo7sVsJm7UAhVZR7mNyECkd1E6lGducB5nTjYwKqU8xiGo49LSPwTwFPqQIue0o9eiPAm8vvlelL2kO9Ora7k0YTL7bc2Eultp-f4F2TNYGKpe_fxNS4EbIWVzZXPoEx5Cq9VCJzlHhYA_fGkg_U1_gho2Am5UIgsQegj780cKdRpKlCbwfhHOl8a8Bq1CC1qw_yReiW65xvKeyk68SXAbcecoqWxkR4U4"/>
+</div>
+</div>
+<div class="space-y-8 md:pl-12">
+<h2 class="font-headline text-4xl md:text-5xl text-primary leading-tight">A curadoria da luz natural como forma de arte.</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed font-light">
+                    Na Solaraia, não criamos apenas coberturas. Desenhamos experiências táteis onde a sombra se torna um elemento arquitetônico fluido. Nossa abordagem editorial foca na harmonia entre o design contemporâneo e a proteção solar de alto desempenho.
+                </p>
+<div class="pt-4">
+<a class="group inline-flex items-center gap-3 text-secondary font-medium tracking-wide border-b border-secondary/20 pb-1 hover:border-secondary transition-all" href="#">
+                        Ler o Manifesto
+                        <span class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Section: Nossas Telas (Bento Grid) -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-screen-2xl mx-auto px-8">
+<div class="flex justify-between items-end mb-16">
+<div class="max-w-xl">
+<span class="font-label text-xs tracking-widest uppercase text-secondary mb-3 block">Galeria de Produtos</span>
+<h2 class="font-headline text-4xl text-primary">Nossas Telas</h2>
+</div>
+<button class="text-primary font-label text-sm tracking-widest uppercase border-b border-primary/20 pb-1 hover:text-secondary hover:border-secondary transition-colors">Ver Tudo</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Large Featured Card -->
+<div class="md:col-span-7 group relative overflow-hidden rounded-xl bg-white aspect-video md:aspect-auto">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Large-scale tensioned sail shade over a modern infinity pool overlooking the ocean, minimalist white furniture on the deck" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrEfqFiVnQNCOXRbIPbzgA_SKOX-bq_kcnKZ-wtQWe0_QQ8qEQ4XsGokcdVaCj5H206jqCBGAf7auB115pjOn4R-vgiO18n3mCxVWQ4XEwu2DbOaiIzFeqbd4nCJdNwvHxD8Bv2iKumYcGGyi-e22FSjDP55-y34WbJZFT-Qqy0orZGaiTQyYe95-PcgqmgI2BeJJLawrVOhgfRfZXyPRGiv2aMO_CPnkI8UIC_Vm5VZ2mTU-aXHd1vld1u_8MerItNxJpNXH-zIU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
+<div class="absolute bottom-8 left-8 right-8 flex justify-between items-end">
+<div class="text-white">
+<h3 class="font-headline text-3xl mb-2">Horizonte S30</h3>
+<p class="text-white/80 font-light max-w-xs">Proteção máxima com transparência visual para vistas infinitas.</p>
+</div>
+<button class="w-12 h-12 rounded-full glass-card flex items-center justify-center text-white hover:bg-secondary transition-colors">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+</div>
+<!-- Glassmorphism Product Card 1 -->
+<div class="md:col-span-5 flex flex-col gap-8">
+<div class="flex-1 glass-card p-8 rounded-xl flex flex-col justify-between group">
+<div class="flex justify-between items-start">
+<div>
+<span class="text-[10px] tracking-widest uppercase text-secondary font-bold">Edição Limitada</span>
+<h3 class="font-headline text-2xl text-primary mt-1">Sombra Orgânica</h3>
+</div>
+<span class="text-primary-container font-headline italic">01</span>
+</div>
+<div class="my-6 aspect-video rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Studio shot of a terracotta-colored architectural fabric swatch being held by hand to show drape and flexibility" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEiIk2Am-7i-B2YLRQECianLpbl8dA91FOFruHH8QUBxwMeL_uRc_KEC_VaMk956nCR3QMSoggUdtO9H3D6J_oR8uyRf9pNA3k_0JxGuP5nGubn0hn_tiSEd4tqa5Qkv7Ljqu_DNTpNHnov9dOCd6D8Z8BzXAiremViSEh54rgwmSz3nEN1iwK-joFktMnqHMA7CuFWZt81ByJXtAx6CkHEWkB-eUb18MosNw2TEPLdagVG07ofwHH93TEhUUFu4j5-13Pjq4qXv0"/>
+</div>
+<div class="flex justify-between items-center">
+<span class="font-body font-semibold text-primary">Sob consulta</span>
+<button class="text-secondary font-label text-xs tracking-widest uppercase flex items-center gap-2 group-hover:gap-4 transition-all">
+                                Detalhes <span class="material-symbols-outlined text-sm">east</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Bento Row 2 -->
+<div class="md:col-span-4 glass-card p-8 rounded-xl group">
+<img class="w-full aspect-square object-cover rounded-lg mb-6" data-alt="Abstract composition of shadow patterns on a white wall created by a perforated shade screen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbNWCZeShYLu8TFiMxn9fGA-NN0GX31ViOpueI_QQ5vLzngw5H7Q5dhY9VDUAxJWD-cvFYU-Fha01_i68fembMsAampq-_AYstaguCFusNZ5eOxwVgN6sBiOO6e3BfLlM_WNt9DbhkI1jqL52W8bvtCI7fEwxhukHdi8MN7hiScfTKLjLz0YQEvTs2GSHOfsdzgoHdbKqYte-5jBDTjDTCiqqdZpKME7K39ZM9VqrJK8-EtVxhKCJ3ek9nNptrbq_BCQzIlTTdCWw"/>
+<h4 class="font-headline text-xl text-primary mb-2">Perfurado V5</h4>
+<p class="text-on-surface-variant text-sm font-light mb-6">Ventilação passiva e controle térmico para áreas gourmet.</p>
+<button class="w-full py-3 border border-outline-variant rounded hover:bg-primary hover:text-white transition-colors uppercase tracking-widest text-[10px] font-bold">Solicitar Catálogo</button>
+</div>
+<div class="md:col-span-8 relative rounded-xl overflow-hidden bg-white">
+<img class="w-full h-full object-cover" data-alt="Detail of high-end marine grade stainless steel tensioning hardware for sail shades on a wooden beam" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKbeOLGSl1LPV_Z9j3wL_ap7DxGskXIfIgFkHiZ4vXi0GjMzRSckHxLSwZUFxTxmy5OXzf0s5KLIEm4WI7wYioQgurIHw7Sz79xAnQ98AKOUTcGCz5XSl41Nbl07ps0twtrWg_Na-2sTOjV0U7YpqjLG--rPnqPWt_-oW-NliuMZ2wKeiWJ5N28bXxduKlBEwMl0_2PfGs_ax4NTs_3Ga0jDyjyzqb-dty_x6RErWHpktw3CL8q2_Ze6yPi4MuJtbWGQaWEciNTbQ"/>
+<div class="absolute inset-0 bg-white/10 backdrop-blur-[2px] hover:backdrop-blur-none transition-all duration-500 flex items-center justify-center">
+<div class="bg-white/90 p-10 max-w-md text-center shadow-2xl rounded-sm">
+<h4 class="font-headline text-2xl text-primary mb-4">Engenharia de Precisão</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Cada componente é usinado em aço inoxidável 316 para resistir às condições costeiras mais severas.</p>
+<span class="text-secondary font-label text-xs tracking-[0.2em] uppercase">Excelência Técnica</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section: Sustainability / Craft -->
+<section class="py-32 bg-primary text-white overflow-hidden relative">
+<div class="absolute top-0 right-0 w-1/2 h-full opacity-10 pointer-events-none">
+<svg class="w-full h-full fill-current" viewbox="0 0 100 100">
+<circle cx="100" cy="0" r="80"></circle>
+</svg>
+</div>
+<div class="max-w-screen-xl mx-auto px-8 relative z-10">
+<div class="grid md:grid-cols-2 gap-16 items-center">
+<div class="order-2 md:order-1">
+<span class="font-label text-xs tracking-[0.4em] uppercase text-orange-400 mb-6 block">Sustentabilidade</span>
+<h2 class="font-headline text-4xl md:text-6xl leading-tight mb-8">Tecendo um futuro mais consciente.</h2>
+<p class="text-white/70 text-lg leading-relaxed mb-10 font-light">
+                        Nossas telas são produzidas com polímeros 100% recicláveis e pigmentos orgânicos. Acreditamos que o luxo só é verdadeiro quando respeita o horizonte que emoldura.
+                    </p>
+<div class="flex gap-12">
+<div>
+<span class="block font-headline text-4xl text-orange-400">98%</span>
+<span class="text-[10px] tracking-widest uppercase text-white/50">Proteção UV</span>
+</div>
+<div>
+<span class="block font-headline text-4xl text-orange-400">10y</span>
+<span class="text-[10px] tracking-widest uppercase text-white/50">Garantia</span>
+</div>
+<div>
+<span class="block font-headline text-4xl text-orange-400">Zero</span>
+<span class="text-[10px] tracking-widest uppercase text-white/50">Desperdício</span>
+</div>
+</div>
+</div>
+<div class="order-1 md:order-2">
+<div class="relative group">
+<img class="rounded-full aspect-square object-cover border-[16px] border-white/5" data-alt="Artistic photograph of sunlight breaking through a dense forest canopy, symbolizing natural light and sustainability" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_N2d-BW0cDBn-9iaxlb5zM2r4-oBB0O1zBGTbEnVs1enSHW7MooJiMQSY60OelO3L6yxjwPi_dDy-EdP4fTRMrtRhufumZ2XlxfRycDT0F5zOtr24vgdlT5DMv8K88dRG1Vtq7adL9ousri2ssrF_f-zIsXnmorMS5QGrUqx84sbJr2Y8ABinkAltb62DuLnIGl_uD7fhEDs-zd3hplnWBqdjixe5BCAcuP-C1JJmdZtNq6wjWcKa9oGEEiKzi6WH_QiGSzZb8h4"/>
+<div class="absolute -inset-4 border border-orange-400/30 rounded-full animate-pulse"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#f8f3e9] dark:bg-slate-950 text-[#1A2F4B] dark:text-orange-200 w-full relative">
+<div class="max-w-screen-2xl mx-auto flex flex-col md:flex-row justify-between items-center px-12 py-16 gap-8">
+<div class="flex flex-col gap-4 items-center md:items-start">
+<div class="flex items-center gap-3">
+<img alt="Solaraia Logo" class="h-8 w-auto grayscale brightness-50" data-alt="Small sun logo in dark tone for footer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXU6bnv4aSdJByCcmnCdA-Rb90h6Z0LxYZqXw09Z86aBzlkdOAkCMRsM6OZ31UODvZ4JhnM8xtuFNc4iUPXSO-9zvmEfpu1yCMsGQ7AcrHsuqj-2NAVmXTiNS7a7nQNNxj2JPHYjMWrUuY5W1kANqBtTt1OWyHWLXzbPWnXac1-seU1dUNq0z4WL8Tu1mqEN6wWFyYLcs1MGrDzHP4VrTPo_V3gugnBCh7NxXFGfmhOlX-FztJvik8lxx-yZAuRhJfHcQlsiFlKno"/>
+<span class="text-xl font-serif text-[#1A2F4B] dark:text-orange-500">Solaraia</span>
+</div>
+<p class="font-['Manrope'] text-[10px] tracking-widest uppercase opacity-60">Curadoria de Luz &amp; Design Editorial</p>
+</div>
+<div class="flex gap-10 font-['Manrope'] text-sm tracking-widest uppercase">
+<a class="text-slate-500 dark:text-slate-400 hover:text-[#9c4323] transition-colors duration-300 relative group" href="#">
+                    Privacy Policy
+                    <span class="absolute bottom-0 left-0 w-0 h-[1px] bg-secondary transition-all duration-300 group-hover:w-full"></span>
+</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-[#9c4323] transition-colors duration-300 relative group" href="#">
+                    Terms of Service
+                    <span class="absolute bottom-0 left-0 w-0 h-[1px] bg-secondary transition-all duration-300 group-hover:w-full"></span>
+</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-[#9c4323] transition-colors duration-300 relative group" href="#">
+                    Contact Us
+                    <span class="absolute bottom-0 left-0 w-0 h-[1px] bg-secondary transition-all duration-300 group-hover:w-full"></span>
+</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-[#9c4323] transition-colors duration-300 relative group" href="#">
+                    Press Kit
+                    <span class="absolute bottom-0 left-0 w-0 h-[1px] bg-secondary transition-all duration-300 group-hover:w-full"></span>
+</a>
+</div>
+<p class="font-['Manrope'] text-sm tracking-widest uppercase opacity-60 text-center md:text-right">
+                © 2024 Solaraia – Horizonte Editorial. All rights reserved.
+            </p>
+</div>
+</footer>
+</body></html>

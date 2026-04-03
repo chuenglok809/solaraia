@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400&amp;family=Manrope:wght@200;300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-fixed-dim": "#cac6bd",
+              "secondary-container": "#fc8d66",
+              "primary-fixed-dim": "#b3c8eb",
+              "primary": "#021a35",
+              "on-secondary-container": "#732506",
+              "on-secondary-fixed-variant": "#7d2c0d",
+              "primary-container": "#1a2f4b",
+              "on-tertiary-fixed-variant": "#494740",
+              "tertiary-fixed": "#e7e2d8",
+              "surface-tint": "#4b5f7e",
+              "surface-dim": "#dedad0",
+              "on-primary": "#ffffff",
+              "outline-variant": "#c4c6ce",
+              "on-surface-variant": "#44474d",
+              "on-error": "#ffffff",
+              "error-container": "#ffdad6",
+              "on-primary-fixed": "#041c37",
+              "tertiary": "#1b1a14",
+              "outline": "#74777e",
+              "on-tertiary-fixed": "#1d1c16",
+              "on-primary-fixed-variant": "#334865",
+              "surface-variant": "#e7e2d8",
+              "surface-container-lowest": "#ffffff",
+              "secondary-fixed": "#ffdbd0",
+              "surface-container": "#f2ede3",
+              "surface-bright": "#fef9ef",
+              "on-error-container": "#93000a",
+              "tertiary-container": "#302e28",
+              "surface-container-highest": "#e7e2d8",
+              "secondary-fixed-dim": "#ffb59d",
+              "on-background": "#1d1c16",
+              "on-primary-container": "#8397b8",
+              "inverse-primary": "#b3c8eb",
+              "inverse-on-surface": "#f5f0e6",
+              "surface": "#fef9ef",
+              "primary-fixed": "#d4e3ff",
+              "on-tertiary": "#ffffff",
+              "inverse-surface": "#32302a",
+              "secondary": "#9c4323",
+              "on-tertiary-container": "#99958d",
+              "background": "#fef9ef",
+              "on-secondary-fixed": "#390c00",
+              "on-secondary": "#ffffff",
+              "surface-container-low": "#f8f3e9",
+              "surface-container-high": "#ede8de",
+              "on-surface": "#1d1c16",
+              "error": "#ba1a1a"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+      }
+      .font-serif { font-family: 'Noto Serif', serif; }
+      .tonal-shift-surface { background-color: rgba(254, 249, 239, 0.7); }
+    </style>
+</head>
+<body class="bg-surface text-primary font-body selection:bg-secondary-fixed selection:text-secondary">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl shadow-sm shadow-[#1A2F4B]/5">
+<div class="flex justify-between items-center px-8 py-6 max-w-screen-2xl mx-auto">
+<div class="flex items-center gap-12">
+<a class="text-2xl font-serif italic text-[#1A2F4B]" href="#">Solaraia</a>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-[#9c4323] font-medium border-b border-[#9c4323] pb-1 font-['Noto_Serif'] font-light tracking-wide" href="#">Collections</a>
+<a class="text-[#1A2F4B] hover:text-[#9c4323] transition-colors font-['Noto_Serif'] font-light tracking-wide" href="#">Our Craft</a>
+<a class="text-[#1A2F4B] hover:text-[#9c4323] transition-colors font-['Noto_Serif'] font-light tracking-wide" href="#">Sustainability</a>
+<a class="text-[#1A2F4B] hover:text-[#9c4323] transition-colors font-['Noto_Serif'] font-light tracking-wide" href="#">Journal</a>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<button class="hover:opacity-80 transition-all duration-300">
+<span class="material-symbols-outlined text-[#1A2F4B]">search</span>
+</button>
+<button class="hover:opacity-80 transition-all duration-300 relative">
+<span class="material-symbols-outlined text-[#1A2F4B]">shopping_bag</span>
+<span class="absolute -top-1 -right-1 bg-secondary text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center">0</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section: Curadoria de Luz -->
+<section class="relative min-h-[921px] flex items-center px-8 md:px-24 overflow-hidden">
+<div class="grid md:grid-cols-12 gap-12 w-full max-w-screen-2xl mx-auto items-center">
+<div class="md:col-span-5 z-10">
+<span class="font-label text-xs tracking-[0.3em] uppercase text-secondary mb-6 block">Edição de Verão 2024</span>
+<h1 class="font-headline text-5xl md:text-7xl leading-tight text-primary mb-8">Onde a Luz <br/><span class="italic">Encontra</span> o Horizonte.</h1>
+<p class="font-body text-lg text-on-surface-variant max-w-md mb-12 leading-relaxed">
+                        Explorando a intersecção entre arquitetura mediterrânea e o minimalismo tátil. Uma coleção curada para espaços que respiram.
+                    </p>
+<a class="inline-flex items-center gap-4 bg-gradient-to-br from-primary to-primary-container text-on-primary px-10 py-5 rounded-md hover:opacity-90 transition-all group" href="#">
+<span class="font-label tracking-widest uppercase text-sm">Explorar Catálogo</span>
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
+</a>
+</div>
+<div class="md:col-span-7 relative">
+<div class="relative aspect-[4/5] rounded-xl overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="luxury minimalist villa interior with harsh sunlight creating dramatic shadows on white walls and light oak flooring" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQ7Rvy7xaVK-mfcwl1mJRSTGXVLcpDxoW01gcJwCZYjBfomLcid56DneSnHCCyAewsYPDGnoBEBPTLr4y2AblArF6rD6mA60yHwhvG5uH3nxcRpYV8EMmSunPVWsjAyI1RZSnbcnBlb1LEmrPYMNWyYvgJvwLPLb-ztT3SPhZ3q7fYMnOtjcQBY4AtTceuSqrHj-Fi3FngDvYotxpTqteTUuZsiT79AkanGUlgvJKQ6eWju0TsJuhErywa6OpgGmStf0AoL76ArZQ"/>
+</div>
+<div class="absolute -bottom-12 -left-12 w-64 h-80 hidden lg:block rounded-xl overflow-hidden shadow-xl border-4 border-surface">
+<img class="w-full h-full object-cover" data-alt="close-up of textured beige ceramic vase on a stone ledge with soft morning light and palm leaf shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlHC92tBAoU3KbaZDZSOfthqfN2LpIOYr2T5t7vPq2qq_2amSOPQXFzsJ2th5x4xZbW9fV__1B39j9-usDqRpzLRrTTzW-rTxkNY2sIFTwpo7tSt2-zvhukmkVmGb2TVCvaovnV1olKP5v0LUnhkrqmCT6_kA9hTpAMiVg093KDtgNH8EFjpxhlxQ_xuUjZ3mmz611DG6RlHlql8gctvtUZGj58WTpaYN7sr30u8VMAOWL_tAaTuNbklL6z3I0agiHI6FPBzvxUdE"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Catalog Grid -->
+<section class="py-32 px-8 bg-surface-container-low">
+<div class="max-w-screen-2xl mx-auto">
+<div class="flex justify-between items-end mb-20">
+<div>
+<h2 class="font-headline text-4xl text-primary mb-4">Peças de Assinatura</h2>
+<p class="text-on-surface-variant font-body">Design editorial focado na pureza da forma.</p>
+</div>
+<button class="text-secondary font-label text-sm tracking-widest uppercase border-b border-transparent hover:border-secondary transition-all pb-1">Ver Tudo</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+<!-- Product 1 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] overflow-hidden rounded-xl mb-6 bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="minimalist sculptural chair made of light wood in a sunlit white room with sharp shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAI7-emw9BNaXPYcqbzblCsqjzQHbU2eN2cjn5uT4yUufUIYiD8kE_ndApZVl2P0w1pvtxDqnxVXS4GIDoXXA8JuEFTYDmcuiNa3Lf08F1ZOF--slMOI7oQqpnn6rg7rQHN6sARqpknbHJj_enWpSnALqE7_6VpSkkzq8WPcjOZ74eWnYu7cOaT39wPxZQJcTPqb72xemiz5yc4bHj2pORM40TWyCNLeFiB6KR8Wu179S_RMqCtkazz9nvvoc57ty8Kqi6JJ5JfOGA"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline text-xl text-primary mb-1">Cadeira Lumière</h3>
+<p class="text-on-surface-variant text-sm font-label uppercase tracking-wider">Carvalho Natural</p>
+</div>
+<span class="text-primary font-body text-lg">€1.240</span>
+</div>
+<div class="mt-4 pt-4 border-t border-outline-variant/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+<button class="text-secondary text-xs font-label uppercase tracking-widest flex items-center gap-2">
+                                Adicionar à Coleção <span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="group cursor-pointer translate-y-12">
+<div class="aspect-[3/4] overflow-hidden rounded-xl mb-6 bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="modern minimalist floor lamp with a thin black stand and a circular frosted glass globe in a neutral toned room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7IPJkspwq5NlPTEUzW1jUrBfL5CrLzfr82XynHQpNaHdRmZb45HuEwIJVm_S6cRg9HHPzZA51FR5u6MeGbnfxOOaEfNndbV1uldO2LnZWZ2reVXra0_VAS46_hhQSEJVxJvZuIDNEfVdAMZSlmEdVMVXp_4uzevkB4kC3pOjzB1ChWT6Oko2e8tom1DlTBxuWFYJZVhjFLGRqDFRPsJG2dd_ECk_rBd_0TpeXChjqCBUetmVYwb9zxuJR_O6HHws27h6btORxUH0"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline text-xl text-primary mb-1">Pendente Aurora</h3>
+<p class="text-on-surface-variant text-sm font-label uppercase tracking-wider">Vidro Soprado</p>
+</div>
+<span class="text-primary font-body text-lg">€890</span>
+</div>
+<div class="mt-4 pt-4 border-t border-outline-variant/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+<button class="text-secondary text-xs font-label uppercase tracking-widest flex items-center gap-2">
+                                Adicionar à Coleção <span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="group cursor-pointer">
+<div class="aspect-[3/4] overflow-hidden rounded-xl mb-6 bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="minimalist white marble coffee table with smooth edges and organic shape in a luxury interior" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCsAL1GsL1KHuxj0vfmQ2b4Zwlk9qzfes0gjyamuObukGdFVSH3hAvLbPrz8lf-MVfPxf6g__vq7GXngMvrZ9RzucH0b7ASAtISUbagXFuc-noOpk0Tu2gIF4_hPvd15Puw7Bz3SS15uz2h2BlSeUtdPOOrLAJYf39Y666N9mDi31Zxbh384pF6KcvlrntQ4GGt6IupNogfLubR115eeSBBzDLeia-Jk7jpuHI2t5R28YgvBBeTWBclkboxEwimrTWG7NQQHlJ0uQ"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline text-xl text-primary mb-1">Mesa Marmo</h3>
+<p class="text-on-surface-variant text-sm font-label uppercase tracking-wider">Mármore Carrara</p>
+</div>
+<span class="text-primary font-body text-lg">€2.650</span>
+</div>
+<div class="mt-4 pt-4 border-t border-outline-variant/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+<button class="text-secondary text-xs font-label uppercase tracking-widest flex items-center gap-2">
+                                Adicionar à Coleção <span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Specs: A Ciência do Conforto -->
+<section class="py-32 px-8 bg-surface">
+<div class="max-w-4xl mx-auto">
+<div class="text-center mb-24">
+<span class="font-label text-xs tracking-[0.4em] uppercase text-secondary mb-4 block">Excelência Técnica</span>
+<h2 class="font-headline text-4xl text-primary">Especificações de Engenharia</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-y-16 gap-x-24">
+<div class="flex gap-6 items-start">
+<span class="material-symbols-outlined text-3xl text-secondary">architecture</span>
+<div>
+<h4 class="font-headline text-lg mb-2">Estrutura Orgânica</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">Desenvolvida com algoritmos que mimetizam o crescimento de fibras naturais para máxima resistência com peso mínimo.</p>
+</div>
+</div>
+<div class="flex gap-6 items-start">
+<span class="material-symbols-outlined text-3xl text-secondary">eco</span>
+<div>
+<h4 class="font-headline text-lg mb-2">Material Regenerativo</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">Utilizamos exclusivamente polímeros de base biológica e madeira com certificação de reflorestamento infinito.</p>
+</div>
+</div>
+<div class="flex gap-6 items-start">
+<span class="material-symbols-outlined text-3xl text-secondary">light_mode</span>
+<div>
+<h4 class="font-headline text-lg mb-2">Difusão de Luz</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">Nossos vidros possuem tratamento nano-texturizado para suavizar a luz direta, reduzindo o brilho em até 40%.</p>
+</div>
+</div>
+<div class="flex gap-6 items-start">
+<span class="material-symbols-outlined text-3xl text-secondary">precision_manufacturing</span>
+<div>
+<h4 class="font-headline text-lg mb-2">Montagem Manual</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">Cada peça é finalizada por artesãos mestre em nosso ateliê de Lisboa, garantindo precisão milimétrica.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Journal Preview (Asymmetric Layout) -->
+<section class="py-32 bg-surface-container-high overflow-hidden">
+<div class="max-w-screen-2xl mx-auto px-8">
+<div class="flex flex-col md:flex-row gap-20 items-center">
+<div class="w-full md:w-1/2 relative">
+<div class="aspect-square bg-white rounded-xl shadow-lg relative z-10 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="sunlight streaming through a large window hitting a white desk with a single minimalist ceramic bowl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyx6W7v9hPm8cco9WuPneGr3EtD-npNHff_yXSeb3qBLypUXOuL-Xy9RtcfjWr09o2LlQ4MkAv_c9--CtIXCfyl5uQYPIX40NfS5b5lkUNnKDBW-KG0vVuT6cwnuFB6tqbrkZ-GFLELzvbNZhAgF4RXraU_lEex3pT_H0cw2Cd0rCxPsd0Vv15cMmdS6Hgk3po_R_1KqCHO1or1WhJRvyN75UcgX0gX4X8-WeQO7GBUP-w_xKXGwK215v6aDFF3t_sFzuRQkRhP90"/>
+</div>
+<div class="absolute -top-10 -right-10 w-48 h-48 bg-secondary/10 rounded-full blur-3xl"></div>
+</div>
+<div class="w-full md:w-1/2">
+<span class="font-label text-xs tracking-widest uppercase text-secondary mb-4 block">Journal – Vol. 04</span>
+<h2 class="font-headline text-5xl text-primary mb-8 leading-tight">O Silêncio como <br/>Elemento Decorativo.</h2>
+<p class="text-on-surface-variant text-lg mb-10 leading-relaxed font-light">
+                            Uma conversa com a arquiteta Helena Soares sobre como a ausência de objetos pode preencher um espaço com intenção e calma.
+                        </p>
+<a class="inline-flex items-center gap-2 group" href="#">
+<span class="font-label uppercase text-xs tracking-widest text-primary font-bold">Ler Artigo Completo</span>
+<div class="w-8 h-[1px] bg-primary group-hover:w-12 transition-all"></div>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter / Footer Prep -->
+<section class="py-32 px-8 text-center bg-surface">
+<div class="max-w-xl mx-auto">
+<h3 class="font-headline text-3xl text-primary mb-6">Mantenha o Horizonte Próximo</h3>
+<p class="text-on-surface-variant mb-10">Receba nossa curadoria mensal de design, luz e arquitetura.</p>
+<form class="flex flex-col md:flex-row gap-4">
+<input class="flex-1 bg-transparent border-b border-outline-variant focus:border-secondary outline-none py-3 font-body text-sm transition-all px-2" placeholder="Seu e-mail profissional" type="email"/>
+<button class="bg-primary text-white font-label uppercase text-xs tracking-widest px-8 py-4 rounded-md hover:bg-primary-container transition-all">Inscrever</button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f8f3e9] w-full relative">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 gap-8 max-w-screen-2xl mx-auto">
+<div class="flex flex-col items-center md:items-start gap-4">
+<span class="text-xl font-serif text-[#1A2F4B]">Solaraia</span>
+<p class="font-['Manrope'] text-sm tracking-widest uppercase text-slate-500">© 2024 Solaraia – Horizonte Editorial. All rights reserved.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-10">
+<a class="font-['Manrope'] text-sm tracking-widest uppercase text-slate-500 hover:text-[#9c4323] transition-colors duration-300" href="#">Privacy Policy</a>
+<a class="font-['Manrope'] text-sm tracking-widest uppercase text-slate-500 hover:text-[#9c4323] transition-colors duration-300" href="#">Terms of Service</a>
+<a class="font-['Manrope'] text-sm tracking-widest uppercase text-slate-500 hover:text-[#9c4323] transition-colors duration-300" href="#">Contact Us</a>
+<a class="font-['Manrope'] text-sm tracking-widest uppercase text-slate-500 hover:text-[#9c4323] transition-colors duration-300" href="#">Press Kit</a>
+</div>
+</div>
+</footer>
+</body></html>

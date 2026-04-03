@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400&amp;family=Manrope:wght@200;300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-fixed-dim": "#cac6bd",
+              "secondary-container": "#fc8d66",
+              "primary-fixed-dim": "#b3c8eb",
+              "primary": "#021a35",
+              "on-secondary-container": "#732506",
+              "on-secondary-fixed-variant": "#7d2c0d",
+              "primary-container": "#1a2f4b",
+              "on-tertiary-fixed-variant": "#494740",
+              "tertiary-fixed": "#e7e2d8",
+              "surface-tint": "#4b5f7e",
+              "surface-dim": "#dedad0",
+              "on-primary": "#ffffff",
+              "outline-variant": "#c4c6ce",
+              "on-surface-variant": "#44474d",
+              "on-error": "#ffffff",
+              "error-container": "#ffdad6",
+              "on-primary-fixed": "#041c37",
+              "tertiary": "#1b1a14",
+              "outline": "#74777e",
+              "on-tertiary-fixed": "#1d1c16",
+              "on-primary-fixed-variant": "#334865",
+              "surface-variant": "#e7e2d8",
+              "surface-container-lowest": "#ffffff",
+              "secondary-fixed": "#ffdbd0",
+              "surface-container": "#f2ede3",
+              "surface-bright": "#fef9ef",
+              "on-error-container": "#93000a",
+              "tertiary-container": "#302e28",
+              "surface-container-highest": "#e7e2d8",
+              "secondary-fixed-dim": "#ffb59d",
+              "on-background": "#1d1c16",
+              "on-primary-container": "#8397b8",
+              "inverse-primary": "#b3c8eb",
+              "inverse-on-surface": "#f5f0e6",
+              "surface": "#fef9ef",
+              "primary-fixed": "#d4e3ff",
+              "on-tertiary": "#ffffff",
+              "inverse-surface": "#32302a",
+              "secondary": "#9c4323",
+              "on-tertiary-container": "#99958d",
+              "background": "#fef9ef",
+              "on-secondary-fixed": "#390c00",
+              "on-secondary": "#ffffff",
+              "surface-container-low": "#f8f3e9",
+              "surface-container-high": "#ede8de",
+              "on-surface": "#1d1c16",
+              "error": "#ba1a1a"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-shadow {
+            box-shadow: 0 20px 40px -15px rgba(2, 26, 53, 0.08);
+        }
+        .text-vertical {
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+        }
+        .parallax-slow {
+            transform: translateY(var(--tw-translate-y));
+        }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #fef9ef; }
+        ::-webkit-scrollbar-thumb { background: #1a2f4b; }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl shadow-sm shadow-[#1A2F4B]/5 no-border">
+<div class="flex justify-between items-center px-8 py-6 max-w-screen-2xl mx-auto">
+<div class="flex items-center gap-12">
+<div class="text-2xl font-serif italic text-[#1A2F4B]">
+<img alt="Solaraia Logo" class="h-8 w-auto object-contain" data-alt="minimalist and elegant logo for Solaraia featuring clean serif typography and a subtle geometric sun icon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnSTCi_lEAx8GF8CTDLbveyU1xLBxhNmb92v6j4FX7ECpCPwOBSAltavAJ5E2CN4J7BAnzd_pAw8Q1rGj5Tu7LiQf24ff1fAniEJvodcJQY5x5nKJfUmEa2cDJjkxgZcJu7ia5Mx3xIP0vfzNUgSfdPLe_Rqj7UI1C50Y80cVOqB9-VClYkiSgy7-_3fvC-kR5FedrEKBLrlEmer0ANYiQVGNYI5i9GkkNlbajRTKhGfD3llddLRhY-w3IXRejneu7p_s_8YogBv4"/>
+</div>
+<div class="hidden lg:flex gap-8 items-center">
+<a class="text-[#9c4323] font-medium border-b border-[#9c4323] pb-1 font-['Noto_Serif'] font-light tracking-wide transition-all duration-300" href="#">Collections</a>
+<a class="text-[#1A2F4B] hover:text-[#9c4323] transition-colors font-['Noto_Serif'] font-light tracking-wide transition-all duration-300" href="#">Our Craft</a>
+<a class="text-[#1A2F4B] hover:text-[#9c4323] transition-colors font-['Noto_Serif'] font-light tracking-wide transition-all duration-300" href="#">Sustainability</a>
+<a class="text-[#1A2F4B] hover:text-[#9c4323] transition-colors font-['Noto_Serif'] font-light tracking-wide transition-all duration-300" href="#">Journal</a>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<div class="relative hidden md:block">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-sm">search</span>
+<input class="bg-transparent border-b border-outline-variant/30 py-1 pl-9 pr-4 text-sm focus:outline-none focus:border-secondary transition-colors font-label" placeholder="Buscar..." type="text"/>
+</div>
+<button class="hover:opacity-80 transition-all duration-300 active:scale-95 flex items-center">
+<span class="material-symbols-outlined text-[#1A2F4B]" data-icon="shopping_bag">shopping_bag</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="pt-24 overflow-x-hidden">
+<!-- Hero Section: Architectural Asymmetry -->
+<section class="relative min-h-[921px] flex items-center px-8 lg:px-24 mb-32">
+<div class="grid grid-cols-12 gap-6 w-full items-center">
+<div class="col-span-12 lg:col-span-5 z-10">
+<p class="font-label text-xs tracking-[0.3em] text-secondary uppercase mb-6">Volume I — Edição de Verão</p>
+<h1 class="font-headline text-5xl md:text-7xl lg:text-8xl leading-[1.1] text-primary mb-8">Onde a Luz <br/> <span class="italic font-light">Encontra a Forma.</span></h1>
+<p class="font-body text-lg text-on-surface-variant max-w-md mb-10 leading-relaxed">
+                        Exploramos a interseção entre a arquitetura brutalista e a calidez do horizonte mediterrâneo. Uma curadoria editorial de mobiliário e iluminação.
+                    </p>
+<div class="flex items-center gap-8">
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-10 py-4 rounded-md font-label uppercase tracking-widest text-sm hover:opacity-90 transition-all">
+                            Explorar Coleção
+                        </button>
+<a class="text-secondary font-label tracking-widest text-xs uppercase group relative py-2" href="#">
+                            A Nossa História
+                            <span class="absolute bottom-0 left-0 w-full h-[1px] bg-secondary origin-left scale-x-50 group-hover:scale-x-100 transition-transform duration-300"></span>
+</a>
+</div>
+</div>
+<div class="col-span-12 lg:col-span-7 relative flex justify-end">
+<div class="relative w-4/5 lg:w-[85%] aspect-[4/5] overflow-hidden rounded-xl editorial-shadow">
+<img alt="Artesanato Solaraia" class="w-full h-full object-cover grayscale-[20%] contrast-[110%]" data-alt="architectural interior with clean lines, minimalist concrete walls, and dramatic shadows cast by sunlight through a large window" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIn39ckFUoImCLZQ2SSH_78zD_83Jq4_TUHXSbsS7M0qccnFUBsUU3MJwCxMaA_vTrldPfhfhHzmwlboMWmo-9SY_-G54fAih2h1a4dxOmx97tDihxbJayhPs-Ibfv0xLvdApY1Y39BOVunBByfkjYbOCgS_DHY4D85byh5jIju-jYAswDC89T-Bj2MskWWpLQKXRlx_bNfVUKUntpNdwEKdUtj5adQLSZQnLEeolXCrRSMj62D8CeqckVkb7R4sYwcbXdvm4nHdI"/>
+</div>
+<div class="absolute -bottom-16 -left-12 w-1/2 hidden lg:block aspect-square editorial-shadow rounded-xl overflow-hidden border-[12px] border-surface z-20">
+<img alt="Detalhe Solaraia" class="w-full h-full object-cover" data-alt="detail of high-end lighting fixture in warm terracotta and brushed brass against a white textured wall" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjSqgMUfLTDJdtWZs1b1U9Yuo-Csb_996zlGEIMn0LrssLIh0N8ZqC6VnbQo5AoRIYsO7Zo9AtMizGbPClmP-ufMoj5-wkM2woYHBIlWv3X8T3JBoxRwxHWUR8TDx7mZY7C8O1gA32Pq4nXmoHTU9hoGaYiSmI8gRJLH-JQXeOdsTdt3rr94xEr4nV1VCMDxwKRZRS9RUO7Q__8E6fXPJjxVOaskYpDGD_YaTPxChoRcCQ7WGxIu0tlUkJBdb4sK12pt5QBIrqcSo"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Trajetória de Luz: Timeline Section -->
+<section class="bg-primary-container py-32 text-on-primary overflow-hidden">
+<div class="max-w-screen-xl mx-auto px-8 lg:px-24">
+<div class="flex flex-col lg:flex-row items-end justify-between mb-24 gap-8">
+<div class="max-w-xl">
+<h2 class="font-headline text-4xl lg:text-6xl mb-6">Trajetória <span class="italic text-secondary-container">de Luz</span></h2>
+<p class="font-body text-primary-fixed-dim text-lg">A evolução da Solaraia é um diálogo contínuo entre a terra e o céu. Uma década dedicada à curadoria de espaços que respiram.</p>
+</div>
+<div class="text-vertical hidden lg:block font-label text-[10px] tracking-[0.5em] uppercase text-on-primary-container opacity-50">
+                        ESTABELECIDO EM 2014 • HORIZONTE EDITORIAL
+                    </div>
+</div>
+<div class="relative grid grid-cols-1 md:grid-cols-3 gap-16">
+<!-- Timeline Item 1 -->
+<div class="relative group">
+<div class="text-6xl font-headline italic text-on-primary-container/20 mb-8 group-hover:text-secondary-container transition-colors duration-500">2014</div>
+<div class="w-12 h-[1px] bg-secondary-container mb-6"></div>
+<h3 class="font-headline text-xl mb-4">A Primeira Semente</h3>
+<p class="font-body text-sm text-on-primary-container leading-relaxed">Nascemos em um pequeno estúdio em Lisboa, focados na preservação de técnicas ancestrais de cerâmica e vidro soprado.</p>
+</div>
+<!-- Timeline Item 2 -->
+<div class="relative group md:mt-24">
+<div class="text-6xl font-headline italic text-on-primary-container/20 mb-8 group-hover:text-secondary-container transition-colors duration-500">2019</div>
+<div class="w-12 h-[1px] bg-secondary-container mb-6"></div>
+<h3 class="font-headline text-xl mb-4">Expansão Editorial</h3>
+<p class="font-body text-sm text-on-primary-container leading-relaxed">Lançamos a nossa primeira publicação impressa, fundindo design de produto com crítica arquitetônica e fotografia de autor.</p>
+</div>
+<!-- Timeline Item 3 -->
+<div class="relative group md:mt-48">
+<div class="text-6xl font-headline italic text-on-primary-container/20 mb-8 group-hover:text-secondary-container transition-colors duration-500">2024</div>
+<div class="w-12 h-[1px] bg-secondary-container mb-6"></div>
+<h3 class="font-headline text-xl mb-4">Horizonte Digital</h3>
+<p class="font-body text-sm text-on-primary-container leading-relaxed">A Solaraia torna-se uma plataforma global, unindo artesãos locais a colecionadores internacionais através de uma curadoria digital imersiva.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Product Gallery: Refined Shadows & Asymmetry -->
+<section class="py-32 bg-surface-bright">
+<div class="max-w-screen-2xl mx-auto px-8 lg:px-24">
+<div class="grid grid-cols-12 gap-12">
+<!-- Feature Image (Left) -->
+<div class="col-span-12 lg:col-span-4 flex flex-col justify-center order-2 lg:order-1">
+<div class="space-y-12">
+<div class="group cursor-pointer">
+<h4 class="font-label text-xs tracking-widest text-secondary uppercase mb-2">Coleção Ocre</h4>
+<h3 class="font-headline text-3xl mb-4 hover:italic transition-all">Luminária Suspensa 'Duna'</h3>
+<p class="text-on-surface-variant font-body mb-6">Inspirada na silhueta das dunas do Alentejo ao entardecer.</p>
+<span class="text-primary font-bold text-lg">€ 1.250</span>
+</div>
+<div class="h-[1px] w-full bg-outline-variant/20"></div>
+<div class="group cursor-pointer">
+<h4 class="font-label text-xs tracking-widest text-outline uppercase mb-2">Limitado</h4>
+<h3 class="font-headline text-3xl mb-4 hover:italic transition-all">Cadeira 'Sombra'</h3>
+<p class="text-on-surface-variant font-body mb-6">Carvalho maciço com acabamento em óleo natural e couro cru.</p>
+<span class="text-primary font-bold text-lg">€ 2.800</span>
+</div>
+</div>
+</div>
+<!-- Main Grid (Right) -->
+<div class="col-span-12 lg:col-span-8 grid grid-cols-2 gap-8 order-1 lg:order-2">
+<div class="col-span-2 md:col-span-1 space-y-8">
+<div class="aspect-[3/4] rounded-xl overflow-hidden editorial-shadow bg-surface-container-low group">
+<img alt="Luminária Duna" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="elegant minimalist pendant lamp made of textured terracotta hanging in a modern white room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfOWR0TCdrqPDvgWoZs_pJkK4QHdKrvSacVZXAEyu4KhZ53K7Mpe8xAlb31QdxX2OWBX7euB5Ppk24DngAraQ3ScOhAOGZ0k3fxJpKy6FcA8MFxkyHg3ZVpeFBe0AUuSOhdMoFWE7JhXuXp_0-iQSZpkq1IJCuONV7Ne0FV83Vov85Eald225sowktWNyq0NZzWEtxCwspwCMfRqbc1gj9o-hQiv8Kw3yncnAiJWPFGljj_HVqQMMsupM6GCAU0MPjmpbG08rXWgA"/>
+</div>
+<div class="aspect-square rounded-xl overflow-hidden editorial-shadow bg-surface-container-low group">
+<img alt="Cadeira Sombra" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="sculptural modern wooden chair with clean lines standing against a neutral plaster wall with dramatic sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbnPvf09a4mkvkbWR2ykGGjz9Jf0wPeF_NZ5mmzyBBMOpJf75iwnUuzbXEVSyZzrgGY7hxTViTDjXQpCBLNIP3EwYf7iBrG2qK2RkB_Uiec-IsMDeo2lZtZZqexpen2NUrHHGKRUnVcAcFP1xEmoaqDs2y7KTKbJS8c00YvI1tuVAOkW82L9B0xWkIaaDcrkOQm5Xt7hLTa8inkBguaRM6lDsJONlXrny_vdcLzIY9zwJxckzXI0XGGfgqqbSIJrpGsE8kwhtZtVs"/>
+</div>
+</div>
+<div class="col-span-2 md:col-span-1 space-y-8 pt-12">
+<div class="aspect-square rounded-xl overflow-hidden editorial-shadow bg-surface-container-low group">
+<img alt="Vaso Terra" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="handcrafted dark ceramic vase with organic texture placed on a minimalist stone shelf" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKcmvsEPPZnC1z_c1bH81enbwrRPTFh3bs4aqN75aEhdy7q8g2qSSfvMdayBcLTkBRmVVPZnaVSdEgU4Q54T2bRLKD8tPePP8qxfIQEYQo0g3baOpYw9jkrPjTwjtgAMe1HtBkFyIFkSaNpL7-XMhycOhlshhR6dzOCMRTNNVvC3TiNex0GEU18-7sxFz2Zko_FqlyjYJJ2nuv34rcRTuQ_BZaiav3IBNPdBQfxoLH6Z1UTdAVYny6r_1vg8ZDln06qMmm_u8XMvk"/>
+</div>
+<div class="aspect-[3/4] rounded-xl overflow-hidden editorial-shadow bg-surface-container-low group">
+<img alt="Ambiente Solaraia" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="spacious bright interior with floor to ceiling windows, minimalist furniture and soft natural morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB70S2gpbtsOn4lvd7tZwhNFZkc5du0N4YY0ILjz73QFT5jR48AMprYDml268f97XU5oTXnNGZOhFY3K7aC-PYCV9lPiI-8CoeRMSMvB3nfARIZZUiNQQIjzyRXiGzzh312XMdCcKLboMafXPI5gcHesgDD1BLfBKfarLVxe51BUFcYMjaSihSlkK5XA8Rt6xsCsODIw0Maae5jIqY8AFVRAEC2bYIP2LE0rjEHff6bAjK8VCpjU4X23pMeqypTHuAz7Qa8rWHnfr4"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Signature Editorial Section -->
+<section class="relative bg-surface py-32 overflow-hidden">
+<div class="absolute right-0 top-0 w-1/3 h-full bg-surface-container-high -z-10"></div>
+<div class="max-w-screen-xl mx-auto px-8 lg:px-24">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
+<div class="relative">
+<div class="bg-primary aspect-[4/5] rounded-xl overflow-hidden editorial-shadow -rotate-2">
+<img alt="Arquitetura Minimalista" class="w-full h-full object-cover opacity-80" data-alt="interior view of a brutalist concrete building with soft warm sunlight highlighting the architectural textures and sharp angles" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBY0RcmMxA3oXbNM502WV1gBpHER_tJsI0v_4CK1vt05fyYwp35Uel0MR4qcJcLdB-fX7hp0S9sBUqY1i-ZSza5Oft8hws1PAH-3xrKfzGlgslQuQas5Ms6m91AYH2q3vQohJavxU3_Ug9RrnyORgtst0CMCxYvWyMhGmGMsUyBVIU843x5OfkcDqv9Xfzw5TgbsPTPB3l3t4Hp9frQ4P7coUcjfZ2gmNv669N8X9TTmbdXPV4rnXXWxo0EksahH7gwKtvoCeVSBqQ"/>
+</div>
+<div class="absolute -bottom-10 -right-10 bg-secondary p-12 rounded-xl text-on-secondary hidden lg:block editorial-shadow">
+<span class="material-symbols-outlined text-4xl mb-4">format_quote</span>
+<p class="font-headline text-2xl italic">"O luxo não é o excesso, mas a ausência do desnecessário."</p>
+</div>
+</div>
+<div>
+<h2 class="font-headline text-5xl text-primary mb-12 leading-tight">O Ofício <br/> do Invisível.</h2>
+<div class="space-y-8 text-on-surface-variant leading-relaxed font-body text-lg">
+<p>Na Solaraia, acreditamos que o design mais poderoso é aquele que você não vê, mas sente. É a harmonia entre o peso de uma mesa de pedra e a leveza da luz que a atinge.</p>
+<p>Cada peça da nossa coleção passa por um rigoroso processo de curadoria editorial. Não vendemos objetos; catalogamos experiências táteis que definem o caráter de um lar moderno.</p>
+<button class="flex items-center gap-4 text-primary font-label uppercase tracking-widest text-xs group">
+                                Conheça os nossos artesãos
+                                <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_right_alt</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter / Journal Hook -->
+<section class="py-32 px-8 lg:px-24 text-center bg-surface-container-lowest">
+<div class="max-w-2xl mx-auto">
+<span class="material-symbols-outlined text-secondary text-5xl mb-8">mail</span>
+<h2 class="font-headline text-4xl mb-6">O Diário Solaraia</h2>
+<p class="font-body text-on-surface-variant mb-12">Receba mensalmente a nossa curadoria de arquitetura, design e estilo de vida. Sem ruído, apenas inspiração pura.</p>
+<div class="relative max-w-md mx-auto">
+<input class="w-full bg-transparent border-b-2 border-outline-variant py-4 px-2 focus:outline-none focus:border-secondary transition-colors font-body text-lg text-center" placeholder="O seu e-mail" type="email"/>
+<button class="mt-8 font-label text-xs uppercase tracking-[0.3em] text-secondary hover:text-primary transition-colors">Subscrever</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f8f3e9] w-full relative">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 gap-8 max-w-screen-2xl mx-auto">
+<div class="flex flex-col gap-4 items-center md:items-start">
+<div class="text-xl font-serif text-[#1A2F4B]">
+<img alt="Solaraia Logo" class="h-6 w-auto object-contain brightness-0" data-alt="minimalist and elegant logo for Solaraia featuring clean serif typography and a subtle geometric sun icon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAweXh_hMpocQMYqBoXnmAof-7jg9tYRLqLnQApb7IoWJsILuiFCagtKASbXMRaR7zT_wU69VmSLz9NypG0qtkf1pVTInw2YJuWr8HWci9mEqhovmKRufhtT7HEF7CKuLTCNIXT9qCbGpQX-06kwAZR9eZzEprF2C16I1kqyj8nRZ_pLprpLratSPLZVbNIe_v8ZSJLGtAsMsSp-CU52ZO6riMr1p3vVjMjpaxz0ZQK6hFa-eaZ2bd5q8S0M4YpIJlr8YmFRMmDj2I"/>
+</div>
+<p class="font-['Manrope'] text-sm tracking-widest uppercase text-slate-500 max-w-xs text-center md:text-left">© 2024 Solaraia – Horizonte Editorial. All rights reserved.</p>
+</div>
+<div class="flex gap-12 text-[#1A2F4B]">
+<div class="flex flex-col gap-3 items-center md:items-start">
+<a class="font-['Manrope'] text-sm tracking-widest uppercase text-slate-500 hover:text-[#9c4323] transition-colors duration-300" href="#">Privacy Policy</a>
+<a class="font-['Manrope'] text-sm tracking-widest uppercase text-slate-500 hover:text-[#9c4323] transition-colors duration-300" href="#">Terms of Service</a>
+</div>
+<div class="flex flex-col gap-3 items-center md:items-start">
+<a class="font-['Manrope'] text-sm tracking-widest uppercase text-slate-500 hover:text-[#9c4323] transition-colors duration-300" href="#">Contact Us</a>
+<a class="font-['Manrope'] text-sm tracking-widest uppercase text-slate-500 hover:text-[#9c4323] transition-colors duration-300" href="#">Press Kit</a>
+</div>
+</div>
+<div class="flex gap-6">
+<a class="text-primary hover:text-secondary transition-colors" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="text-primary hover:text-secondary transition-colors" href="#"><span class="material-symbols-outlined">share</span></a>
+<a class="text-primary hover:text-secondary transition-colors" href="#"><span class="material-symbols-outlined">alternate_email</span></a>
+</div>
+</div>
+</footer>
+</body></html>
