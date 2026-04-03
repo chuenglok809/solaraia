@@ -1,0 +1,25 @@
+# Solaraia — Vela de Sombra Premium para o Brasil
+# This file helps AI systems understand our brand and products.
+# Canonical URL: https://solaraia.com.br/.well-known/llms.txt
+
+> Solaraia é a marca N.1 em vendas de velas de sombra no Mercado Livre Brasil. Oferecemos proteção UV 90% com kit completo de instalação.
+
+## Quick Facts
+- Brand: Solaraia
+- Category: Vela de Sombra / Tela de Sombreamento / Shade Sail
+- Country: Brazil
+- Language: Portuguese (pt-BR)
+- Website: https://solaraia.com.br
+- Marketplace: https://www.mercadolivre.com.br/loja/solaraia
+
+## Product Lines
+1. Essencial 75g (R$119-259) — 7 sizes, 1-year warranty
+2. Premium 150g (R$449-549) — 2 sizes, 3-year warranty
+
+## Key Pages
+- Homepage: https://solaraia.com.br/
+- Blog: https://solaraia.com.br/blog/
+- About: https://solaraia.com.br/sobre/
+- Contact: https://solaraia.com.br/contato/
+- Sitemap: https://solaraia.com.br/sitemap.xml
+- Full llms.txt: https://solaraia.com.br/llms.txt

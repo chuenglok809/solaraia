@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Politica de Privacidade | Solaraia</title>
+<meta name="description" content="Politica de Privacidade da Solaraia. Saiba como coletamos, usamos e protegemos seus dados pessoais em conformidade com a LGPD."/>
+<meta name="keywords" content="politica de privacidade, LGPD, Solaraia, protecao de dados, privacidade"/>
+<meta property="og:title" content="Politica de Privacidade | Solaraia"/>
+<meta property="og:description" content="Saiba como a Solaraia coleta, usa e protege seus dados pessoais em conformidade com a LGPD."/>
+<meta property="og:type" content="website"/>
+<meta property="og:locale" content="pt_BR"/>
+<meta property="og:url" content="https://solaraia.com.br/privacidade/"/>
+<link rel="canonical" href="https://solaraia.com.br/privacidade/"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Nunito+Sans:wght@300;400;500;600;700&family=Zilla+Slab:wght@500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script>
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "brand-blue": "#377097",
+        "brand-blue-dark": "#2A5673",
+        "brand-blue-light": "#4A8DB8",
+        "brand-blue-muted": "#EDF4F8",
+        "brand-orange": "#E4882C",
+        "brand-orange-dark": "#C47025",
+        "brand-orange-light": "#F0A85C",
+        "brand-orange-muted": "#FDF5EC",
+        "brand-gold": "#B8860B",
+        "pix-green": "#00BDAE",
+        "neutral-900": "#1A1A1A",
+        "neutral-700": "#3D3D3D",
+        "neutral-500": "#6B6B6B",
+        "neutral-300": "#B8B8B8",
+        "neutral-100": "#F5F5F5",
+        "warm-cream": "#FDF5EC",
+        "success": "#2E7D32",
+        "error": "#D32F2F",
+      },
+      borderRadius: {
+        "DEFAULT": "0.5rem",
+        "lg": "0.75rem",
+        "xl": "1rem",
+        "2xl": "1.5rem",
+        "full": "9999px",
+      },
+      fontFamily: {
+        "headline": ["Plus Jakarta Sans", "sans-serif"],
+        "body": ["Nunito Sans", "sans-serif"],
+      }
+    },
+  },
+}
+</script>
+<style>
+  body { font-family: 'Nunito Sans', sans-serif; background-color: #FDF5EC; color: #3D3D3D; }
+  h1, h2, h3 { font-family: 'Plus Jakarta Sans', sans-serif; }
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24; }
+  .craft-divider {
+    width: 100%;
+    height: 24px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 24' preserveAspectRatio='none'%3E%3Cpath d='M0 12 Q30 2, 60 12 T120 12 T180 12 T240 12 T300 12 T360 12 T420 12 T480 12 T540 12 T600 12 T660 12 T720 12 T780 12 T840 12 T900 12 T960 12 T1020 12 T1080 12 T1140 12 T1200 12' fill='none' stroke='%23E4882C' stroke-width='2' opacity='0.3'/%3E%3C/svg%3E");
+    background-repeat: repeat-x;
+  }
+  .stitch-border {
+    border: 2px dashed rgba(55, 112, 151, 0.2);
+    border-radius: 1rem;
+  }
+  .legal-content h2 { @apply text-2xl font-extrabold text-brand-blue mt-10 mb-4; }
+  .legal-content h3 { @apply text-lg font-bold text-brand-blue mt-6 mb-3; }
+  .legal-content p { @apply text-neutral-700 leading-relaxed mb-4; }
+  .legal-content ul { @apply list-disc list-inside text-neutral-700 leading-relaxed mb-4 space-y-1; }
+  .legal-content ol { @apply list-decimal list-inside text-neutral-700 leading-relaxed mb-4 space-y-1; }
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="sticky top-0 w-full z-50 bg-white shadow-sm shadow-neutral-900/5">
+  <div class="flex justify-between items-center px-6 md:px-8 py-3 max-w-7xl mx-auto">
+    <a href="/" class="flex items-center gap-2">
+      <span class="material-symbols-outlined text-brand-orange text-3xl" style="font-variation-settings: 'FILL' 1;">wb_sunny</span>
+      <span class="font-headline font-extrabold text-xl text-brand-blue tracking-tight">Solaraia</span>
+    </a>
+    <div class="hidden md:flex items-center gap-8">
+      <a class="font-headline font-bold text-brand-blue hover:text-brand-orange transition-colors" href="/">Home</a>
+      <a class="font-headline font-bold text-brand-blue hover:text-brand-orange transition-colors" href="/#produtos">Produtos</a>
+      <a class="font-headline font-bold text-brand-blue hover:text-brand-orange transition-colors" href="/blog">Blog</a>
+      <a class="font-headline font-bold text-brand-blue hover:text-brand-orange transition-colors" href="/sobre">Sobre</a>
+    </div>
+    <button id="mobile-menu-btn" class="md:hidden text-brand-blue">
+      <span class="material-symbols-outlined text-3xl">menu</span>
+    </button>
+  </div>
+  <div id="mobile-menu" class="hidden md:hidden border-t border-neutral-100 bg-white px-6 pb-4">
+    <div class="flex flex-col gap-3 pt-3">
+      <a class="font-headline font-bold text-brand-blue hover:text-brand-orange transition-colors py-1" href="/">Home</a>
+      <a class="font-headline font-bold text-brand-blue hover:text-brand-orange transition-colors py-1" href="/#produtos">Produtos</a>
+      <a class="font-headline font-bold text-brand-blue hover:text-brand-orange transition-colors py-1" href="/blog">Blog</a>
+      <a class="font-headline font-bold text-brand-blue hover:text-brand-orange transition-colors py-1" href="/sobre">Sobre</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="bg-gradient-to-br from-brand-blue to-brand-blue-dark py-12 md:py-16 relative overflow-hidden">
+  <div class="absolute inset-0 opacity-10">
+    <div class="absolute top-10 left-12 w-40 h-40 border-2 border-dashed border-white/30 rounded-full"></div>
+    <div class="absolute bottom-6 right-10 w-28 h-28 border-2 border-dashed border-white/20 rounded-full"></div>
+  </div>
+  <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+    <span class="inline-block px-4 py-1.5 rounded-full bg-white/15 text-white font-body text-sm uppercase tracking-widest mb-6">Legal</span>
+    <h1 class="text-3xl md:text-5xl font-headline font-extrabold text-white leading-tight mb-4">Politica de Privacidade</h1>
+    <p class="text-lg text-white/70 max-w-xl mx-auto">Como coletamos, usamos e protegemos seus dados pessoais.</p>
+  </div>
+</section>
+
+<div class="craft-divider"></div>
+
+<!-- CONTENT -->
+<section class="max-w-3xl mx-auto px-6 md:px-8 py-12 md:py-16">
+  <div class="bg-white rounded-xl p-8 md:p-12 shadow-sm border border-neutral-100 legal-content">
+
+    <p class="text-sm text-neutral-500 mb-8">Ultima atualizacao: Abril de 2026</p>
+
+    <p>A Solaraia ("nos", "nossa") esta comprometida com a protecao da privacidade dos seus dados pessoais. Esta Politica de Privacidade descreve como coletamos, usamos, armazenamos e protegemos suas informacoes, em conformidade com a Lei Geral de Protecao de Dados (LGPD -- Lei n. 13.709/2018).</p>
+
+    <h2>1. Dados Pessoais Coletados</h2>
+    <p>Coletamos os seguintes dados pessoais quando voce interage com nosso Site ou realiza uma compra:</p>
+
+    <h3>1.1 Dados fornecidos por voce</h3>
+    <ul>
+      <li><strong>Nome completo</strong> -- para identificacao e emissao de nota fiscal.</li>
+      <li><strong>CPF</strong> -- para emissao de nota fiscal e prevencao de fraude.</li>
+      <li><strong>E-mail</strong> -- para confirmacao de pedido, atualizacoes de envio e comunicacao.</li>
+      <li><strong>Numero de WhatsApp / telefone</strong> -- para atendimento ao cliente.</li>
+      <li><strong>Endereco completo</strong> -- para entrega dos produtos.</li>
+    </ul>
+
+    <h3>1.2 Dados coletados automaticamente</h3>
+    <ul>
+      <li><strong>Endereco IP e dados de navegacao</strong> -- para seguranca e analise de trafego.</li>
+      <li><strong>Informacoes do dispositivo</strong> -- tipo de navegador, sistema operacional, resolucao de tela.</li>
+      <li><strong>Dados de interacao</strong> -- paginas visitadas, tempo de permanencia, cliques.</li>
+    </ul>
+
+    <h2>2. Cookies e Tecnologias de Rastreamento</h2>
+    <p>Utilizamos cookies e tecnologias similares para melhorar sua experiencia e analisar o uso do Site:</p>
+    <ul>
+      <li><strong>Google Analytics 4 (GA4):</strong> coleta dados anonimizados sobre o uso do Site para analise de trafego e comportamento de navegacao. Os dados sao processados pelo Google LLC.</li>
+      <li><strong>Meta Pixel (Facebook Pixel):</strong> utilizado para medir a eficacia de campanhas publicitarias e criar publicos personalizados. Os dados sao processados pela Meta Platforms, Inc.</li>
+      <li><strong>Cookies essenciais:</strong> necessarios para o funcionamento basico do Site, como sessao de navegacao e preferencias.</li>
+    </ul>
+    <p>Voce pode gerenciar suas preferencias de cookies nas configuracoes do seu navegador. A desativacao de cookies nao essenciais pode afetar algumas funcionalidades do Site.</p>
+
+    <h2>3. Finalidade do Uso dos Dados</h2>
+    <p>Seus dados pessoais sao utilizados para as seguintes finalidades:</p>
+    <ul>
+      <li>Processar e entregar pedidos de compra.</li>
+      <li>Enviar confirmacoes de pedido e atualizacoes de envio.</li>
+      <li>Prestar atendimento ao cliente e suporte pos-venda.</li>
+      <li>Emitir notas fiscais e cumprir obrigacoes fiscais.</li>
+      <li>Enviar comunicacoes de marketing (apenas com seu consentimento).</li>
+      <li>Analisar o uso do Site para melhorar nossos produtos e servicos.</li>
+      <li>Prevenir fraudes e garantir a seguranca das transacoes.</li>
+    </ul>
+
+    <h2>4. Compartilhamento de Dados</h2>
+    <p>Seus dados pessoais podem ser compartilhados com os seguintes terceiros, exclusivamente para as finalidades descritas:</p>
+    <ul>
+      <li><strong>Processadores de pagamento:</strong> para processar transacoes financeiras de forma segura (ex.: Mercado Pago, operadoras de cartao).</li>
+      <li><strong>Transportadoras e servicos de entrega:</strong> para envio e rastreamento de pedidos (ex.: Mercado Envios, Correios).</li>
+      <li><strong>Plataformas de analise:</strong> Google Analytics e Meta Pixel, conforme descrito na secao de Cookies.</li>
+      <li><strong>Autoridades legais:</strong> quando exigido por lei ou ordem judicial.</li>
+    </ul>
+    <p>Nao vendemos, alugamos ou comercializamos seus dados pessoais com terceiros para fins proprios.</p>
+
+    <h2>5. Seus Direitos sob a LGPD</h2>
+    <p>Em conformidade com a LGPD, voce tem os seguintes direitos em relacao aos seus dados pessoais:</p>
+    <ul>
+      <li><strong>Confirmacao e acesso:</strong> saber se tratamos seus dados e obter copia das informacoes.</li>
+      <li><strong>Correcao:</strong> solicitar a correcao de dados incompletos, inexatos ou desatualizados.</li>
+      <li><strong>Anonimizacao, bloqueio ou eliminacao:</strong> de dados desnecessarios ou tratados em desconformidade.</li>
+      <li><strong>Portabilidade:</strong> solicitar a transferencia de seus dados a outro fornecedor.</li>
+      <li><strong>Eliminacao:</strong> solicitar a exclusao de dados tratados com base em consentimento.</li>
+      <li><strong>Revogacao do consentimento:</strong> retirar seu consentimento a qualquer momento.</li>
+      <li><strong>Oposicao:</strong> opor-se ao tratamento quando realizado em desconformidade com a LGPD.</li>
+    </ul>
+    <p>Para exercer qualquer desses direitos, entre em contato conosco pelos canais indicados na secao de Contato.</p>
+
+    <h2>6. Retencao de Dados</h2>
+    <p>Seus dados pessoais serao retidos pelo tempo necessario para cumprir as finalidades para as quais foram coletados, incluindo:</p>
+    <ul>
+      <li><strong>Dados de compra e nota fiscal:</strong> 5 anos, conforme legislacao fiscal brasileira.</li>
+      <li><strong>Dados de comunicacao e atendimento:</strong> 2 anos apos o ultimo contato.</li>
+      <li><strong>Dados de navegacao e cookies:</strong> ate 26 meses (conforme politica do GA4).</li>
+      <li><strong>Dados de marketing:</strong> ate a revogacao do consentimento pelo titular.</li>
+    </ul>
+    <p>Apos o periodo de retencao, os dados serao anonimizados ou eliminados de forma segura.</p>
+
+    <h2>7. Seguranca dos Dados</h2>
+    <p>Adotamos medidas tecnicas e organizacionais para proteger seus dados pessoais contra acesso nao autorizado, perda, alteracao ou destruicao, incluindo:</p>
+    <ul>
+      <li>Conexao segura via HTTPS/SSL em todo o Site.</li>
+      <li>Armazenamento seguro com acesso restrito a pessoal autorizado.</li>
+      <li>Processamento de pagamentos por plataformas certificadas PCI-DSS.</li>
+    </ul>
+
+    <h2>8. Transferencia Internacional de Dados</h2>
+    <p>Alguns dos nossos prestadores de servicos (Google, Meta) podem processar dados fora do Brasil. Nesses casos, garantimos que a transferencia ocorre em conformidade com a LGPD, mediante clausulas contratuais adequadas ou para paises com nivel adequado de protecao de dados.</p>
+
+    <h2>9. Alteracoes nesta Politica</h2>
+    <p>Esta Politica de Privacidade pode ser atualizada periodicamente. A versao mais recente estara sempre disponivel nesta pagina, com a data da ultima atualizacao. Recomendamos que voce revise esta politica regularmente.</p>
+
+    <h2>10. Contato e Encarregado de Dados (DPO)</h2>
+    <p>Para duvidas, solicitacoes ou exercicio dos seus direitos previstos na LGPD, entre em contato:</p>
+    <ul>
+      <li><strong>E-mail:</strong> contato@solaraia.com.br</li>
+      <li><strong>WhatsApp:</strong> (55) 11 99999-9999</li>
+      <li><strong>Horario de atendimento:</strong> Segunda a Sexta, 9h as 18h</li>
+    </ul>
+    <p>As solicitacoes serao respondidas em ate 15 dias uteis, conforme previsto na LGPD.</p>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-brand-blue-dark w-full pt-16 pb-8 text-white relative overflow-hidden">
+  <div class="craft-divider opacity-30"></div>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-12 px-6 md:px-8 max-w-7xl mx-auto">
+    <div>
+      <div class="flex items-center gap-2 mb-4">
+        <span class="material-symbols-outlined text-brand-orange text-2xl" style="font-variation-settings: 'FILL' 1;">wb_sunny</span>
+        <span class="font-headline font-extrabold text-xl text-white tracking-tight">Solaraia</span>
+      </div>
+      <p class="text-brand-orange text-sm italic mb-3">Sol, sombra e bem-estar no seu espaco.</p>
+      <p class="text-white/70 leading-relaxed text-sm">Velas de sombra com costura artesanal e ilhos de metal.</p>
+    </div>
+    <div>
+      <h4 class="font-headline font-bold mb-5">Links Uteis</h4>
+      <ul class="space-y-3 text-sm">
+        <li><a class="text-white/70 hover:text-brand-orange transition-colors" href="/">Home</a></li>
+        <li><a class="text-white/70 hover:text-brand-orange transition-colors" href="/#produtos">Produtos</a></li>
+        <li><a class="text-white/70 hover:text-brand-orange transition-colors" href="/blog">Blog</a></li>
+        <li><a class="text-white/70 hover:text-brand-orange transition-colors" href="/sobre">Sobre</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-headline font-bold mb-5">Fale Conosco</h4>
+      <a class="inline-flex items-center gap-2 bg-success text-white px-5 py-3 rounded-lg font-bold text-sm hover:brightness-110 transition-all mb-4" href="https://wa.me/5511999999999">
+        <span class="material-symbols-outlined text-lg">chat</span> WhatsApp
+      </a>
+    </div>
+  </div>
+  <div class="max-w-7xl mx-auto px-6 md:px-8 mt-12 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-white/50">
+    <p>&copy; 2026 Solaraia. Sol, sombra e bem-estar no seu espaco.</p>
+    <div class="flex gap-4 text-xs">
+      <a href="/termos" class="hover:text-white">Termos de Uso</a>
+      <a href="/privacidade" class="hover:text-white">Privacidade</a>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp FAB -->
+<a href="https://wa.me/5511999999999" class="fixed bottom-6 right-6 z-50 bg-success hover:brightness-110 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-xl transition-all active:scale-95">
+  <span class="material-symbols-outlined text-2xl">chat</span>
+</a>
+
+<script>
+const menuBtn = document.getElementById('mobile-menu-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+menuBtn.addEventListener('click', () => {
+  mobileMenu.classList.toggle('hidden');
+  const icon = menuBtn.querySelector('.material-symbols-outlined');
+  icon.textContent = mobileMenu.classList.contains('hidden') ? 'menu' : 'close';
+});
+</script>
+
+</body>
+</html>

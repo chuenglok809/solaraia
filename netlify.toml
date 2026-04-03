@@ -1,6 +1,10 @@
 [build]
   publish = "."
 
+# Custom 404
+[build.processing]
+  skip_processing = false
+
 [[headers]]
   for = "/*"
   [headers.values]
@@ -24,7 +28,50 @@
     Content-Type = "text/plain; charset=utf-8"
     Cache-Control = "public, max-age=86400"
 
+[[headers]]
+  for = "/sitemap.xml"
+  [headers.values]
+    Content-Type = "application/xml; charset=utf-8"
+    Cache-Control = "public, max-age=86400"
+
+# SEO redirects
 [[redirects]]
   from = "/sitemap"
   to = "/sitemap.xml"
+  status = 301
+
+[[redirects]]
+  from = "/produtos"
+  to = "/#produtos"
+  status = 302
+
+[[redirects]]
+  from = "/instalacao"
+  to = "/#instalacao"
+  status = 302
+
+# Trailing slash normalization
+[[redirects]]
+  from = "/blog"
+  to = "/blog/"
+  status = 301
+
+[[redirects]]
+  from = "/sobre"
+  to = "/sobre/"
+  status = 301
+
+[[redirects]]
+  from = "/contato"
+  to = "/contato/"
+  status = 301
+
+[[redirects]]
+  from = "/termos"
+  to = "/termos/"
+  status = 301
+
+[[redirects]]
+  from = "/privacidade"
+  to = "/privacidade/"
   status = 301

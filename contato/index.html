@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contato | Solaraia — Fale Conosco</title>
+<meta name="description" content="Entre em contato com a Solaraia. WhatsApp, e-mail e formulario de contato para duvidas sobre velas de sombra, pedidos e assistencia."/>
+<meta name="keywords" content="contato Solaraia, fale conosco, WhatsApp vela de sombra, atendimento Solaraia"/>
+<meta property="og:title" content="Contato | Solaraia — Fale Conosco"/>
+<meta property="og:description" content="Entre em contato com a Solaraia por WhatsApp, e-mail ou formulario. Atendimento de Seg a Sex, 9h as 18h."/>
+<meta property="og:type" content="website"/>
+<meta property="og:locale" content="pt_BR"/>
+<meta property="og:url" content="https://solaraia.com.br/contato/"/>
+<link rel="canonical" href="https://solaraia.com.br/contato/"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "name": "Contato Solaraia",
+  "url": "https://solaraia.com.br/contato/",
+  "mainEntity": {
+    "@type": "Organization",
+    "name": "Solaraia",
+    "url": "https://solaraia.com.br",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer service",
+      "availableLanguage": "Portuguese",
+      "email": "contato@solaraia.com.br"
+    }
+  }
+}
+</script>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Nunito+Sans:wght@300;400;500;600;700&family=Zilla+Slab:wght@500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script>
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "brand-blue": "#377097",
+        "brand-blue-dark": "#2A5673",
+        "brand-blue-light": "#4A8DB8",
+        "brand-blue-muted": "#EDF4F8",
+        "brand-orange": "#E4882C",
+        "brand-orange-dark": "#C47025",
+        "brand-orange-light": "#F0A85C",
+        "brand-orange-muted": "#FDF5EC",
+        "brand-gold": "#B8860B",
+        "pix-green": "#00BDAE",
+        "neutral-900": "#1A1A1A",
+        "neutral-700": "#3D3D3D",
+        "neutral-500": "#6B6B6B",
+        "neutral-300": "#B8B8B8",
+        "neutral-100": "#F5F5F5",
+        "warm-cream": "#FDF5EC",
+        "success": "#2E7D32",
+        "error": "#D32F2F",
+      },
+      borderRadius: {
+        "DEFAULT": "0.5rem",
+        "lg": "0.75rem",
+        "xl": "1rem",
+        "2xl": "1.5rem",
+        "full": "9999px",
+      },
+      fontFamily: {
+        "headline": ["Plus Jakarta Sans", "sans-serif"],
+        "body": ["Nunito Sans", "sans-serif"],
+      }
+    },
+  },
+}
+</script>
+<style>
+  body { font-family: 'Nunito Sans', sans-serif; background-color: #FDF5EC; color: #3D3D3D; }
+  h1, h2, h3 { font-family: 'Plus Jakarta Sans', sans-serif; }
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24; }
+  .craft-divider {
+    width: 100%;
+    height: 24px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 24' preserveAspectRatio='none'%3E%3Cpath d='M0 12 Q30 2, 60 12 T120 12 T180 12 T240 12 T300 12 T360 12 T420 12 T480 12 T540 12 T600 12 T660 12 T720 12 T780 12 T840 12 T900 12 T960 12 T1020 12 T1080 12 T1140 12 T1200 12' fill='none' stroke='%23E4882C' stroke-width='2' opacity='0.3'/%3E%3C/svg%3E");
+    background-repeat: repeat-x;
+  }
+  .stitch-border {
+    border: 2px dashed rgba(55, 112, 151, 0.2);
+    border-radius: 1rem;
+  }
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="sticky top-0 w-full z-50 bg-white shadow-sm shadow-neutral-900/5">
+  <div class="flex justify-between items-center px-6 md:px-8 py-3 max-w-7xl mx-auto">
+    <a href="/" class="flex items-center gap-2">
+      <span class="material-symbols-outlined text-brand-orange text-3xl" style="font-variation-settings: 'FILL' 1;">wb_sunny</span>
+      <span class="font-headline font-extrabold text-xl text-brand-blue tracking-tight">Solaraia</span>
+    </a>
+    <div class="hidden md:flex items-center gap-8">
+      <a class="font-headline font-bold text-brand-blue hover:text-brand-orange transition-colors" href="/">Home</a>
+      <a class="font-headline font-bold text-brand-blue hover:text-brand-orange transition-colors" href="/#produtos">Produtos</a>
+      <a class="font-headline font-bold text-brand-blue hover:text-brand-orange transition-colors" href="/blog">Blog</a>
+      <a class="font-headline font-bold text-brand-blue hover:text-brand-orange transition-colors" href="/sobre">Sobre</a>
+    </div>
+    <button id="mobile-menu-btn" class="md:hidden text-brand-blue">
+      <span class="material-symbols-outlined text-3xl">menu</span>
+    </button>
+  </div>
+  <div id="mobile-menu" class="hidden md:hidden border-t border-neutral-100 bg-white px-6 pb-4">
+    <div class="flex flex-col gap-3 pt-3">
+      <a class="font-headline font-bold text-brand-blue hover:text-brand-orange transition-colors py-1" href="/">Home</a>
+      <a class="font-headline font-bold text-brand-blue hover:text-brand-orange transition-colors py-1" href="/#produtos">Produtos</a>
+      <a class="font-headline font-bold text-brand-blue hover:text-brand-orange transition-colors py-1" href="/blog">Blog</a>
+      <a class="font-headline font-bold text-brand-blue hover:text-brand-orange transition-colors py-1" href="/sobre">Sobre</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="bg-gradient-to-br from-brand-blue to-brand-blue-dark py-12 md:py-16 relative overflow-hidden">
+  <div class="absolute inset-0 opacity-10">
+    <div class="absolute top-10 left-12 w-40 h-40 border-2 border-dashed border-white/30 rounded-full"></div>
+    <div class="absolute bottom-6 right-10 w-28 h-28 border-2 border-dashed border-white/20 rounded-full"></div>
+  </div>
+  <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+    <span class="inline-block px-4 py-1.5 rounded-full bg-white/15 text-white font-body text-sm uppercase tracking-widest mb-6">Atendimento</span>
+    <h1 class="text-3xl md:text-5xl font-headline font-extrabold text-white leading-tight mb-4">Fale Conosco</h1>
+    <p class="text-lg text-white/70 max-w-xl mx-auto">Estamos prontos para ajudar. Tire suas duvidas, faca sugestoes ou solicite assistencia.</p>
+  </div>
+</section>
+
+<div class="craft-divider"></div>
+
+<!-- CONTACT CONTENT -->
+<section class="max-w-5xl mx-auto px-6 md:px-8 py-12 md:py-16">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+
+    <!-- Left: Contact Info -->
+    <div class="space-y-6">
+
+      <!-- WhatsApp Card -->
+      <div class="stitch-border bg-white p-6 hover:border-brand-orange/30 transition-colors">
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 rounded-full bg-success/10 flex items-center justify-center flex-shrink-0">
+            <span class="material-symbols-outlined text-2xl text-success">chat</span>
+          </div>
+          <div>
+            <h3 class="font-headline font-bold text-brand-blue mb-1">WhatsApp</h3>
+            <p class="text-neutral-500 text-sm mb-3">Resposta rapida, geralmente em minutos.</p>
+            <a href="https://wa.me/5511999999999" class="inline-flex items-center gap-2 bg-success text-white px-5 py-2.5 rounded-lg font-bold text-sm hover:brightness-110 transition-all active:scale-95">
+              <span class="material-symbols-outlined text-lg">chat</span> Abrir WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Email Card -->
+      <div class="stitch-border bg-white p-6 hover:border-brand-orange/30 transition-colors">
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 rounded-full bg-brand-blue-muted flex items-center justify-center flex-shrink-0">
+            <span class="material-symbols-outlined text-2xl text-brand-blue">mail</span>
+          </div>
+          <div>
+            <h3 class="font-headline font-bold text-brand-blue mb-1">E-mail</h3>
+            <p class="text-neutral-500 text-sm mb-1">Para questoes detalhadas ou documentacao.</p>
+            <a href="mailto:contato@solaraia.com.br" class="text-brand-blue hover:text-brand-orange font-semibold underline text-sm">contato@solaraia.com.br</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Business Hours Card -->
+      <div class="stitch-border bg-white p-6 hover:border-brand-orange/30 transition-colors">
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 rounded-full bg-brand-orange-muted flex items-center justify-center flex-shrink-0">
+            <span class="material-symbols-outlined text-2xl text-brand-orange">schedule</span>
+          </div>
+          <div>
+            <h3 class="font-headline font-bold text-brand-blue mb-1">Horario de Atendimento</h3>
+            <p class="text-neutral-700 text-sm"><strong>Segunda a Sexta:</strong> 9h as 18h</p>
+            <p class="text-neutral-500 text-sm mt-1">Sabados, domingos e feriados: sem atendimento.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ Quick Links -->
+      <div class="bg-brand-blue-muted rounded-xl p-6">
+        <h3 class="font-headline font-bold text-brand-blue mb-4">Perguntas Frequentes</h3>
+        <ul class="space-y-3">
+          <li>
+            <a href="/blog" class="flex items-center gap-2 text-sm text-neutral-700 hover:text-brand-orange transition-colors">
+              <span class="material-symbols-outlined text-lg text-brand-orange">arrow_forward</span>
+              Como instalar a vela de sombra?
+            </a>
+          </li>
+          <li>
+            <a href="/termos#trocas" class="flex items-center gap-2 text-sm text-neutral-700 hover:text-brand-orange transition-colors">
+              <span class="material-symbols-outlined text-lg text-brand-orange">arrow_forward</span>
+              Qual a politica de trocas e devolucoes?
+            </a>
+          </li>
+          <li>
+            <a href="/termos#garantia" class="flex items-center gap-2 text-sm text-neutral-700 hover:text-brand-orange transition-colors">
+              <span class="material-symbols-outlined text-lg text-brand-orange">arrow_forward</span>
+              Quanto tempo de garantia?
+            </a>
+          </li>
+          <li>
+            <a href="/#produtos" class="flex items-center gap-2 text-sm text-neutral-700 hover:text-brand-orange transition-colors">
+              <span class="material-symbols-outlined text-lg text-brand-orange">arrow_forward</span>
+              Quais tamanhos e cores estao disponiveis?
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Right: Contact Form -->
+    <div>
+      <div class="bg-white rounded-xl p-8 shadow-sm border border-neutral-100">
+        <h2 class="text-2xl font-headline font-extrabold text-brand-blue mb-2">Envie uma Mensagem</h2>
+        <p class="text-neutral-500 text-sm mb-6">Preencha o formulario abaixo e responderemos em ate 24 horas uteis.</p>
+
+        <form id="contact-form" class="space-y-5" novalidate>
+          <!-- Name -->
+          <div>
+            <label for="name" class="block text-sm font-semibold text-neutral-700 mb-1.5">Nome completo <span class="text-error">*</span></label>
+            <input type="text" id="name" name="name" required placeholder="Seu nome"
+              class="w-full px-4 py-3 rounded-lg border border-neutral-300 focus:border-brand-blue focus:ring-2 focus:ring-brand-blue/20 outline-none transition-colors text-sm" />
+            <p class="text-error text-xs mt-1 hidden" id="name-error">Por favor, informe seu nome.</p>
+          </div>
+
+          <!-- Email -->
+          <div>
+            <label for="email" class="block text-sm font-semibold text-neutral-700 mb-1.5">E-mail <span class="text-error">*</span></label>
+            <input type="email" id="email" name="email" required placeholder="seu@email.com"
+              class="w-full px-4 py-3 rounded-lg border border-neutral-300 focus:border-brand-blue focus:ring-2 focus:ring-brand-blue/20 outline-none transition-colors text-sm" />
+            <p class="text-error text-xs mt-1 hidden" id="email-error">Por favor, informe um e-mail valido.</p>
+          </div>
+
+          <!-- Subject -->
+          <div>
+            <label for="subject" class="block text-sm font-semibold text-neutral-700 mb-1.5">Assunto</label>
+            <select id="subject" name="subject"
+              class="w-full px-4 py-3 rounded-lg border border-neutral-300 focus:border-brand-blue focus:ring-2 focus:ring-brand-blue/20 outline-none transition-colors text-sm bg-white">
+              <option value="">Selecione um assunto</option>
+              <option value="duvida-produto">Duvida sobre produto</option>
+              <option value="pedido">Meu pedido</option>
+              <option value="troca-devolucao">Troca ou devolucao</option>
+              <option value="garantia">Garantia</option>
+              <option value="parceria">Parceria comercial</option>
+              <option value="outro">Outro</option>
+            </select>
+          </div>
+
+          <!-- Message -->
+          <div>
+            <label for="message" class="block text-sm font-semibold text-neutral-700 mb-1.5">Mensagem <span class="text-error">*</span></label>
+            <textarea id="message" name="message" required rows="5" placeholder="Como podemos ajudar?"
+              class="w-full px-4 py-3 rounded-lg border border-neutral-300 focus:border-brand-blue focus:ring-2 focus:ring-brand-blue/20 outline-none transition-colors text-sm resize-vertical"></textarea>
+            <p class="text-error text-xs mt-1 hidden" id="message-error">Por favor, escreva sua mensagem.</p>
+          </div>
+
+          <!-- Submit -->
+          <button type="submit" id="submit-btn"
+            class="w-full bg-brand-orange hover:bg-brand-orange-dark text-white px-6 py-4 rounded-lg font-headline font-bold transition-all active:scale-[0.98] shadow-lg text-base">
+            Enviar Mensagem
+          </button>
+        </form>
+
+        <!-- Success message (hidden by default) -->
+        <div id="success-message" class="hidden text-center py-8">
+          <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-success/10 flex items-center justify-center">
+            <span class="material-symbols-outlined text-4xl text-success" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+          </div>
+          <h3 class="font-headline font-bold text-xl text-brand-blue mb-2">Mensagem enviada!</h3>
+          <p class="text-neutral-500 text-sm">Obrigado pelo contato. Responderemos em breve.</p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-brand-blue-dark w-full pt-16 pb-8 text-white relative overflow-hidden">
+  <div class="craft-divider opacity-30"></div>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-12 px-6 md:px-8 max-w-7xl mx-auto">
+    <div>
+      <div class="flex items-center gap-2 mb-4">
+        <span class="material-symbols-outlined text-brand-orange text-2xl" style="font-variation-settings: 'FILL' 1;">wb_sunny</span>
+        <span class="font-headline font-extrabold text-xl text-white tracking-tight">Solaraia</span>
+      </div>
+      <p class="text-brand-orange text-sm italic mb-3">Sol, sombra e bem-estar no seu espaco.</p>
+      <p class="text-white/70 leading-relaxed text-sm">Velas de sombra com costura artesanal e ilhos de metal.</p>
+    </div>
+    <div>
+      <h4 class="font-headline font-bold mb-5">Links Uteis</h4>
+      <ul class="space-y-3 text-sm">
+        <li><a class="text-white/70 hover:text-brand-orange transition-colors" href="/">Home</a></li>
+        <li><a class="text-white/70 hover:text-brand-orange transition-colors" href="/#produtos">Produtos</a></li>
+        <li><a class="text-white/70 hover:text-brand-orange transition-colors" href="/blog">Blog</a></li>
+        <li><a class="text-white/70 hover:text-brand-orange transition-colors" href="/sobre">Sobre</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-headline font-bold mb-5">Fale Conosco</h4>
+      <a class="inline-flex items-center gap-2 bg-success text-white px-5 py-3 rounded-lg font-bold text-sm hover:brightness-110 transition-all mb-4" href="https://wa.me/5511999999999">
+        <span class="material-symbols-outlined text-lg">chat</span> WhatsApp
+      </a>
+    </div>
+  </div>
+  <div class="max-w-7xl mx-auto px-6 md:px-8 mt-12 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-white/50">
+    <p>&copy; 2026 Solaraia. Sol, sombra e bem-estar no seu espaco.</p>
+    <div class="flex gap-4 text-xs">
+      <a href="/termos" class="hover:text-white">Termos de Uso</a>
+      <a href="/privacidade" class="hover:text-white">Privacidade</a>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp FAB -->
+<a href="https://wa.me/5511999999999" class="fixed bottom-6 right-6 z-50 bg-success hover:brightness-110 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-xl transition-all active:scale-95">
+  <span class="material-symbols-outlined text-2xl">chat</span>
+</a>
+
+<script>
+// Mobile menu toggle
+const menuBtn = document.getElementById('mobile-menu-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+menuBtn.addEventListener('click', () => {
+  mobileMenu.classList.toggle('hidden');
+  const icon = menuBtn.querySelector('.material-symbols-outlined');
+  icon.textContent = mobileMenu.classList.contains('hidden') ? 'menu' : 'close';
+});
+
+// Form validation
+const form = document.getElementById('contact-form');
+const successMessage = document.getElementById('success-message');
+
+function showError(fieldId) {
+  const errorEl = document.getElementById(fieldId + '-error');
+  const inputEl = document.getElementById(fieldId);
+  if (errorEl) errorEl.classList.remove('hidden');
+  if (inputEl) inputEl.classList.add('border-error');
+}
+
+function hideError(fieldId) {
+  const errorEl = document.getElementById(fieldId + '-error');
+  const inputEl = document.getElementById(fieldId);
+  if (errorEl) errorEl.classList.add('hidden');
+  if (inputEl) inputEl.classList.remove('border-error');
+}
+
+function isValidEmail(email) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
+
+// Clear errors on input
+['name', 'email', 'message'].forEach(function(id) {
+  const el = document.getElementById(id);
+  if (el) {
+    el.addEventListener('input', function() { hideError(id); });
+  }
+});
+
+form.addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  let valid = true;
+  const name = document.getElementById('name').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const message = document.getElementById('message').value.trim();
+
+  // Reset
+  hideError('name');
+  hideError('email');
+  hideError('message');
+
+  if (!name) { showError('name'); valid = false; }
+  if (!email || !isValidEmail(email)) { showError('email'); valid = false; }
+  if (!message) { showError('message'); valid = false; }
+
+  if (!valid) return;
+
+  // Simulate submission
+  const submitBtn = document.getElementById('submit-btn');
+  submitBtn.disabled = true;
+  submitBtn.textContent = 'Enviando...';
+
+  setTimeout(function() {
+    form.classList.add('hidden');
+    successMessage.classList.remove('hidden');
+  }, 800);
+});
+</script>
+
+</body>
+</html>
