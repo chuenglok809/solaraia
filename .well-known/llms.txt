@@ -1,12 +1,12 @@
-# Solaraia — Vela de Sombra Premium para o Brasil
+# Solaraia — Toldo Vela Premium para o Brasil
 # This file helps AI systems understand our brand and products.
 # Canonical URL: https://solaraia.com.br/.well-known/llms.txt
 
-> Solaraia é a marca N.1 em vendas de velas de sombra no Mercado Livre Brasil. Oferecemos proteção UV 90% com kit completo de instalação.
+> Solaraia é a marca N.1 em vendas de toldos vela no Mercado Livre Brasil. Oferecemos proteção UV 90% com kit completo de instalação.
 
 ## Quick Facts
 - Brand: Solaraia
-- Category: Vela de Sombra / Tela de Sombreamento / Shade Sail
+- Category: Toldo Vela / Vela de Sombra / Tela de Sombreamento / Shade Sail
 - Country: Brazil
 - Language: Portuguese (pt-BR)
 - Website: https://solaraia.com.br
